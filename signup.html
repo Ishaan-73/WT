@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP</title>
+</head>
+<style>
+    .container{
+        position: absolute;
+        left: 40%;
+        top:20%
+    }
+    h2{
+        text-align: center;
+    }
+
+</style>
+<body>
+    
+    <form method="post" action="Signup.php" id="sform" onsubmit="return validateForm(this)">
+        <h2>SIGNUP</h2>
+            <div class="container">
+            
+            <table>
+                
+                <tr>
+                    <td>Name<span class="red">*</span></td>
+                    <td><input type="text" placeholder="Enter Name..." id="name" name="sname">
+                    <span id="nameError" class="red"></span>
+                    </td>
+    
+                </tr>
+                <tr>
+                    <td>Email<span class="red">*</span></td>
+                    <td><input type="text" placeholder="Enter Email..." id="email" name="semail">
+                        <span id="emailError" class="red"></span></td>
+                </tr>
+                <tr>
+                    <td>Password<span class="red">*</span></td>
+                    <td><input type="text" placeholder="Enter Password..." id="pwd" name="spwd">
+                        <span id="pwdError" class="red"></span></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password<span class="red">*</span></td>
+                    <td><input type="text" placeholder="Confirm Pssword..." id="cpwd" name="scpwd">
+                        <span id="cpwdError" class="red"></span></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;</td>
+                    <td><input type="button" onclick="goToLogin()" value="LOGIN">
+                    <input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    <script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+    
+</head>
+<body>
+    <form method="post" action="upload.php" onsubmit="return validateForm2(this)">
+        <h2>LOGIN</h2>
+
+        <table>
+            <tr>
+                <td>Email<span class="red">*</span></td>
+                <td><input type="text" placeholder="Enter Email..." id="email" name="email">
+                    <span id="emailError" class="red"></span></td>
+            </tr>
+            <tr>
+                <td>Password<span class="red">*</span></td>
+                <td><input type="text" placeholder="Enter Password..." id="pwd" name="pwd">
+                    <span id="pwdError" class="red"></span></td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;</td>
+                <td><input type="button" onclick="goToSignUp()" value="SIGN UP">
+                <input type="submit" value="Login"></td>
+            </tr>
+        </table>
+    </form>
+    <script src="signup.js"></script>
+</body>
+</html>
